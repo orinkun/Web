@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrinBerkedut - Official Community Hub</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-main: #06110b;
+            --card-bg: rgba(13, 27, 18, 0.75);
+            --accent-green: #2ecc71;
+            --accent-glow: #27ae60;
+            --text-main: #f8f9fa;
+            --text-muted: #a0b2a6;
+            --border-color: rgba(46, 204, 113, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(46, 204, 113, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(39, 174, 96, 0.08) 0%, transparent 40%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-green);
+            margin: 0 auto 20px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+            background: #0a1f12;
+        }
+
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #fff, var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.bio {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-discord {
+            background-color: #5865F2;
+            color: #ffffff;
+        }
+
+        .btn-discord:hover {
+            background-color: #4752c4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
+        }
+
+        .btn-youtube {
+            background-color: #FF0000;
+            color: #ffffff;
+        }
+
+        .btn-youtube:hover {
+            background-color: #d90000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto Profil dari Link Catbox -->
+        <div class="profile-avatar">
+            <img src="https://files.catbox.moe/ulx2bi.jpg" alt="OrinBerkedut Profile">
+        </div>
+
+        <h1>OrinBerkedut</h1>
+        <p class="bio">Selamat datang di <i>Hub</i> resmi! Yuk gabung ke komunitas Discord dan tonton keseruan video terbaru di channel YouTube.</p>
+
+        <div class="link-group">
+            <!-- Tombol Discord -->
+            <a href="https://discord.gg/PaW9UaZXQ" target="_blank" class="social-btn btn-discord">
+                <i class="fa-brands fa-discord" style="font-size: 1.3rem;"></i> Gabung Discord Server
+            </a>
+
+            <!-- Tombol YouTube -->
+            <a href="https://youtube.com/@orinberkedutkedut?si=aCCfEHqWjaWubfjb" target="_blank" class="social-btn btn-youtube">
+                <i class="fa-brands fa-youtube" style="font-size: 1.3rem;"></i> Kunjungi Channel YouTube
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 OrinBerkedut. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
